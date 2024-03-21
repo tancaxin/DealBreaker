@@ -1,11 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/green_50"/>
-    <corners android:radius="@dimen/_5pxh"/>
-    <gradient android:angle="225.0"
-        android:centerColor="@color/light_green_500"
-        android:endColor="@color/cyan_A200"
-        android:startColor="@color/green_900" android:type="linear"/>
-    <padding android:bottom="@dimen/_1pxh" android:left="@dimen/_1pxh"
-        android:right="@dimen/_1pxh" android:top="@dimen/_1pxh"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Border shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+            android:color="@color/green_800" />
+            <corners android:radius="@dimen/_5pxh" />
+        </shape>
+    </item>
+
+    <!-- Original shape -->
+    <item android:bottom="@dimen/_1pxh"
+        android:left="@dimen/_1pxh"
+        android:right="@dimen/_1pxh"
+        android:top="@dimen/_1pxh">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_green" />
+            <corners android:radius="@dimen/_5pxh" />
+        </shape>
+    </item>
+
+</layer-list>

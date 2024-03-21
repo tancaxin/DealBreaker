@@ -37,12 +37,12 @@ marks for a incorrect answer</string>
   <string name="msg_ai_generated_analysis">AI Generated Analysis :</string>
   <string name="lbl_louis">Louis</string>
   <string name="msg_you_will_be_directed">You will be directed to the next question once you made your choice of answer. Choose carefully.</string>
-  <string name="msg_no_margin_trading">No margin trading or short selling allowed.</string>
+  <string name="msg_no_margin_trading">2. No margin trading or short selling allowed.</string>
   <string name="lbl_apple">APPLE</string>
   <string name="lbl_44">.44</string>
   <string name="msg_introduction_to">Introduction to Finance</string>
   <string name="msg_2172_04807_13_19">\@2172.04807 13:19</string>
-  <string name="msg_buy_up_to_500_shares">Buy up to 500 shares of each stock per order, first-come, first-served.</string>
+  <string name="msg_buy_up_to_500_shares">1. Buy up to 500 shares of each stock per order, first-come, first-served.</string>
   <string name="lbl_company">Company</string>
   <string name="lbl_240">+ $240</string>
   <string name="msg_100_10037_14_44">\@100.10037 14:44</string>
@@ -50,7 +50,7 @@ marks for a incorrect answer</string>
   <string name="msg_the_5_asset_rule">The 5 Asset Rule</string>
   <string name="lbl_welcome">Welcome </string>
   <string name="lbl_natural_gas">Natural Gas</string>
-  <string name="msg_no_cheating_market">No cheating, market manipulation, or unethical behavior.</string>
+  <string name="msg_no_cheating_market">5. No cheating, market manipulation, or unethical behavior.</string>
   <string name="msg_time_till_this_week_s">Time till this week\u2019s leaderboard closes</string>
   <string name="lbl_100_13947">$100.13947</string>
   <string name="msg_chatgpt_is_an_a">ChatGPT is an artificial-intelligence chatbot developed by OpenAI</string>
@@ -92,7 +92,7 @@ min</string>
   <string name="lbl_11">11</string>
   <string name="lbl_players">Players</string>
   <string name="lbl_20_minutes">20 minutes</string>
-  <string name="msg_balance_must_be">Balance must be under 50% by 5:00 PM daily for active trading. Balances over 50% lead to disqualification.</string>
+  <string name="msg_balance_must_be">3. Balance must be under 50% by 5:00 PM daily for active trading. Balances over 50% lead to disqualification.</string>
   <string name="lbl_addidas">Addidas</string>
   <string name="msg_swap_success_trade">Swap Success: Trade with Players, Not Just Shares !</string>
   <string name="lbl_amazon_com">Amazon.com</string>
@@ -113,15 +113,20 @@ min</string>
   <string name="lbl_6_44">-$6.44</string>
   <string name="msg_this_is_example">This is example that what can i do for you.</string>
   <string name="msg_today_transactions">Today Transactions</string>
-  <string name="msg_current_trend_analysis_the">"Current Trend Analysis:
+  <string name="msg_current_trend_analysis_the">
+    "Current Trend Analysis:
 The trend for Google over the last quarter shows a strong upward trajectory, with a 7% increase in stock value. This aligns with Google's recent announcements on expanding its cloud computing division, which has seen significant market approval.
+
 Volume and Volatility:
 Trading volume has been consistently high, indicating strong interest from both retail and institutional investors. Volatility is within expected norms, suggesting that while there are daily fluctuations, the overall trend is stable.
+
 Market Sentiment:
 Positive news coverage and robust earnings reports have contributed to a favorable market sentiment towards Google. Social media and financial analyst sentiment analysis reinforce this positive outlook.
+
 AI Recommendation:
 Buy Indicator: Based on the current growth trajectory, positive market sentiment, and stable volatility, our AI analysis suggests that Google shares are a strong buy at this moment. Investors looking for long-term growth may find this an opportune time to increase their holdings.
 Sell/Wait Indicator: For investors considering selling Google shares, it may be advisable to wait. The current growth indicators and market conditions suggest potential for further appreciation in value. Those contemplating reducing their position might wait for signs of a trend reversal or market saturation.
+
 Risk Consideration:
 While the outlook is positive, investors should consider their risk tolerance and portfolio diversification. Google, while a strong market player, operates in a highly competitive and rapidly changing tech landscape."</string>
   <string name="lbl_shares">Shares</string>
@@ -135,7 +140,7 @@ While the outlook is positive, investors should consider their risk tolerance an
   <string name="lbl_exxon">Exxon</string>
   <string name="lbl_0_83">+0.83%</string>
   <string name="lbl_more_players">More players </string>
-  <string name="msg_2153_48183_x_10">\@2153.48183 x 10  11:08 -&gt;</string>
+  <string name="msg_2153_48183_x_10">\@2153.48183 x 10  11:08 -&gt; \n@2172.04807 13:19 </string>
   <string name="lbl_134_17164">$134.17164</string>
   <string name="lbl_wrong">Wrong</string>
   <string name="lbl_74_65">-$74.65</string>
@@ -266,7 +271,7 @@ understand it</string>
   <string name="lbl_8">8</string>
   <string name="lbl_google2">GOOGLE</string>
   <string name="lbl_9">9</string>
-  <string name="msg_virtual_commission">Virtual commission fees apply for each trade.</string>
+  <string name="msg_virtual_commission">4. Virtual commission fees apply for each trade.</string>
   <string name="msg_position_p_l">Position P/L = + $240 </string>
   <string name="lbl_chew_jia_xin">Chew Jia Xin</string>
   <string name="msg_blackberry_limited">Blackberry Limited</string>

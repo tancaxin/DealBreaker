@@ -143,4 +143,9 @@
   <color name="blue_100_01">#c9efff</color>
   <color name="blue_200">#94cef2</color>
   <color name="indigo_500">#4b56b6</color>
+  <color name="pink">#FFD1D1</color>
+  <color name="light_green">#E4FFE6</color>
+
+
+
 </resources>
