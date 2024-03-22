@@ -145,7 +145,11 @@
   <color name="indigo_500">#4b56b6</color>
   <color name="pink">#FFD1D1</color>
   <color name="light_green">#E4FFE6</color>
-
+  <color name="red_A100">#ff7c7c</color>
+  <color name="gray_400_sell">#c1c1c1</color>
+  <color name="red_900">#980101</color>
+  <color name="deep_orange_50">#f9dede</color>
+  <color name="gray_300_transparent">#CCdadada</color>
 
 
 </resources>

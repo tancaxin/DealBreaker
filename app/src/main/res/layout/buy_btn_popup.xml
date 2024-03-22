@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/gray_300_transparent">
+            <LinearLayout android:gravity="center"
+                android:id="@+id/layoutBuyPopup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                style="@style/groupStylecornerRadius_1">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/titleCurrentAmount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top"
+                        android:id="@+id/txtYourcurrent"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPoppinsmedium18Blue"
+                        android:text="@string/msg_your_current_amount"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCurrentAmount"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtIntermedium20White"
+                        android:text="@string/lbl_140203_38"/>
+                </LinearLayout>
+
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearStock"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageGoogle"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_width="@dimen/_41pxh"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_group_1814"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearStockInfo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtGooglellc"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            style="@style/txtPoppinssemibold20Gray"
+                            android:text="@string/lbl_google_llc"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPrice1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            style="@style/txtPoppinsregular12Gray"
+                            android:text="@string/msg_price_per_lot"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtKindlyspecify"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    style="@style/txtPoppinsregular13Gray"
+                    android:text="@string/msg_lot_to_purchase"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:id="@+id/linearQuantity"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/etLanguage"
+                        style="@style/etSolidRoundedOutline"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_bg_gray_50_01_border_gray_500_radius_10"
+                        android:ellipsize="end"
+                        android:hint="eg. 5"
+                        android:inputType="text"
+                        android:paddingStart="16dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_600"
+                        tools:ignore="Autofill,RtlSymmetry" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnBuy"
+                        style="@style/btnSolidRoundedOutline_2"
+                        android:layout_width="@dimen/_70pxh"
+                        android:layout_height="@dimen/_30pxv"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_5pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_4pxv"
+                        android:paddingBottom="@dimen/_4pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_buy"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt1lot100"
+                    style="@style/txtPoppinsregular12Gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/msg_1_lot_100_shares" />
+            </LinearLayout>
+    </RelativeLayout>

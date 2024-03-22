@@ -297,4 +297,12 @@ understand it</string>
   <string name="lbl_x200">x200</string>
   <string name="lbl_start_quiz">Start Quiz</string>
   <string name="msg_178_11224_03_49">\@178.11224 03:49</string>
+  <string name="msg_your_current_amount">Your current amount : </string>
+  <string name="msg_price_per_lot">Price per lot :  $10615.783</string>
+  <string name="msg_lot_to_purchase">Kindly specify the quantity of lots you wish to purchase :</string>
+  <string name="msg_1_lot_100_shares">*1 lot = 100 shares</string>
+  <string name="msg_current_inventory">Current inventory of lots available for sale : </string>
+  <string name="lbl_100_lots">100 lots</string>
+  <string name="msg_lot_to_sell">Kindly specify the quantity of lots you wish to sell :</string>
+
 </resources>
