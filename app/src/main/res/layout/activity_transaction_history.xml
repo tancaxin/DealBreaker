@@ -46,7 +46,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    style="@style/txtIntermedium24"
+                    style="@style/txtPoppinsbold20White"
                     android:text="@string/lbl_trading_history"
                     android:layout_height="wrap_content" />
 
