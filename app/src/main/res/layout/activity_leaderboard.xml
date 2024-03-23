@@ -278,7 +278,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="197,459.50"/>
+                        android:text="$197,459.50"/>
                 </LinearLayout>
 
                 <LinearLayout
