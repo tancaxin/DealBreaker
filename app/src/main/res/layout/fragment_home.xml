@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home">
+    tools:context=".HomeFragment">
 
     <LinearLayout
         android:id="@+id/linearColumnvectorOne"
@@ -79,7 +79,7 @@
                 android:singleLine="true"
                 android:text="@string/lbl_welcome_back"
                 android:textAllCaps="true"
-                 />
+                />
         </LinearLayout>
 
         <FrameLayout android:id="@+id/frameStacktotalbalan"

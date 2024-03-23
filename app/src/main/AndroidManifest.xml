@@ -17,21 +17,7 @@
             android:exported="false"
             android:theme="@style/Theme.InvestIQ" />
         <activity
-            android:name=".TradeMainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.InvestIQ" />
-        <activity
-            android:name=".Course"
-            android:exported="false"
-            android:theme="@style/Theme.InvestIQ" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".home"
-            android:exported="false" />
-        <activity
-            android:name=".profile_page"
+            android:name=".Chapter"
             android:exported="false" />
         <activity
             android:name=".LeaderboardActivity"
@@ -56,7 +42,7 @@
             android:name=".B4QuizStartActivity"
             android:exported="false" />
         <activity
-            android:name=".Chapter"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

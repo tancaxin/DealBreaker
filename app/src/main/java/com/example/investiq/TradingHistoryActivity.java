@@ -21,8 +21,7 @@ public class TradingHistoryActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TradingHistoryActivity.this, profile_page.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

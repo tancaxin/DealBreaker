@@ -1,5 +1,6 @@
 package com.example.investiq;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentContainerView mainFragmentContainer;
     BottomNavigationView bottomBar;
-
+    private static final int CHAPTER_ACTIVITY_REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +46,17 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.inflateMenu(R.menu.bottom_nav_menu);
         NavigationUI.setupWithNavController(bottomNav, navController);
 
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        boolean cameFromFragment = intent.getBooleanExtra("came_from_fragment", false);
+        if (cameFromFragment) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.mainFragmentContainer, new CourseFragment())
+                    .commit();
+        }
     }
 }

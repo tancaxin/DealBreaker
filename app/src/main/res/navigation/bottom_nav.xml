@@ -3,21 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_nav"
-    app:startDestination="@id/DestCourse">
+    app:startDestination="@id/homeFragment">
 
-    <activity
-        android:id="@+id/DestTrade"
-        android:name="com.example.investiq.TradeMainActivity"
-        android:label="activity_trade_main"
-        tools:layout="@layout/activity_trade_main" />
-    <activity
-        android:id="@+id/DestCourse"
-        android:name="com.example.investiq.Course"
-        android:label="activity_course"
-        tools:layout="@layout/activity_course" />
-    <activity
-        android:id="@+id/DestChapter"
-        android:name="com.example.investiq.Chapter"
-        android:label="activity_chapter"
-        tools:layout="@layout/activity_chapter" />
+
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.example.investiq.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.investiq.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.example.investiq.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+    <fragment
+        android:id="@+id/tradeMainFragment"
+        android:name="com.example.investiq.TradeMainFragment"
+        android:label="fragment_trade_main"
+        tools:layout="@layout/fragment_trade_main" />
 </navigation>

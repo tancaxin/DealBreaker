@@ -28,8 +28,7 @@ public class LeaderboardActivity extends AppCompatActivity {
         arrowBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LeaderboardActivity.this, home.class);
-                startActivity(intent);
+                finish();
             }
         });
 

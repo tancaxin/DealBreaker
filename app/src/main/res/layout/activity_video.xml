@@ -218,7 +218,7 @@
                     android:paddingBottom="@dimen/_10pxv"
                     android:paddingEnd="@dimen/_13pxh"
                     android:paddingStart="@dimen/_13pxh"
-                    android:paddingTop="@dimen/_22pxv" style="@style/groupStyleblue_gray_800cornerRadius">
+                    android:paddingTop="@dimen/_22pxv" style="@style/groupStyleblue_gray_800GPT_bg">
                     <LinearLayout android:id="@+id/linearBox4"
                         android:layout_gravity="end"
                         android:layout_height="wrap_content"

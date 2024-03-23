@@ -318,7 +318,7 @@
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnStartQuiz"
+                    android:id="@+id/btnFinish"
                     style="@style/btnGradientRounded"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

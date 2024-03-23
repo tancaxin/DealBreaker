@@ -1,7 +1,14 @@
 package com.example.investiq;
 
+import static android.content.Context.LAYOUT_INFLATER_SERVICE;
+
+import static androidx.core.content.ContextCompat.getSystemService;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -12,9 +19,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-public class TradeMainActivity extends AppCompatActivity {
+public class TradeMainFragment extends Fragment {
 
     LinearLayout screen;
     ImageView guidance;
@@ -22,14 +28,21 @@ public class TradeMainActivity extends AppCompatActivity {
     Button buy;
     Button sell;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_trade_main);
 
-        screen = findViewById(R.id.screen);
-        guidance = findViewById(R.id.btnGuidanceOne);
-        buy = findViewById(R.id.btnBuy);
-        sell = findViewById(R.id.btnSell);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_trade_main, container, false);
+
+        screen = view.findViewById(R.id.screen);
+        guidance = view.findViewById(R.id.btnGuidanceOne);
+        buy = view.findViewById(R.id.btnBuy);
+        sell = view.findViewById(R.id.btnSell);
 
         guidance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,10 +64,12 @@ public class TradeMainActivity extends AppCompatActivity {
                 CreatePopUpWindowSell();
             }
         });
+
+        return view;
     }
 
     private void CreatePopUpWindowSell() {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) requireContext().getSystemService(LAYOUT_INFLATER_SERVICE);
         View popUpView = inflater.inflate(R.layout.sell_btn_popup, null);
 
         int width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -79,7 +94,7 @@ public class TradeMainActivity extends AppCompatActivity {
     }
 
     private void CreatePopUpWindowBuy() {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) requireContext().getSystemService(LAYOUT_INFLATER_SERVICE);
         View popUpView = inflater.inflate(R.layout.buy_btn_popup, null);
 
         int width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -105,7 +120,7 @@ public class TradeMainActivity extends AppCompatActivity {
     }
 
     private void CreatePopUpWindowGuideline() {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) requireContext().getSystemService(LAYOUT_INFLATER_SERVICE);
         View popUpView = inflater.inflate(R.layout.trading_guidance_popup, null);
 
         int width = ViewGroup.LayoutParams.MATCH_PARENT;
