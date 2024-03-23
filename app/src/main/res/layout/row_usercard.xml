@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:gravity="end" android:id="@+id/linearUsercard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_8pxv"
+        android:paddingEnd="@dimen/_6pxh"
+        android:paddingStart="@dimen/_6pxh"
+        android:paddingTop="@dimen/_8pxv" style="@style/groupStylewhite_A700cornerRadius">
+        <TextView android:ellipsize="end" android:id="@+id/txtOne"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            style="@style/txt" android:text="@string/lbl_1"/>
+        <ImageView android:id="@+id/imageUserImage"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_width="@dimen/_32pxh"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_ellipse_56"
+            />
+        <TextView android:ellipsize="end" android:id="@+id/txtUserName"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/lbl_marsha_fisher"
+            style="@style/txtPlusJakartaSansromanbold14" />
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtUserPoints"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4pxv"
+            android:layout_marginStart="@dimen/_104pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/lbl_36_pts"
+            style="@style/txtPlusJakartaSansromanregular14" />
+    </LinearLayout>
+
+</LinearLayout>

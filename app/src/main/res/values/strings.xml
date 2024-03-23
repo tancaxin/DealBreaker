@@ -237,8 +237,7 @@ min</string>
     <string name="msg_brief_explanation">Brief explanation about this quiz</string>
     <string name="msg_share_109_661">SHARE : 109.661 USD</string>
     <string name="msg_2172_04807_16_19">\@2172.04807 16:19</string>
-    <string name="msg_welcome_back_user">Welcome Back
-User\!</string>
+    <string name="msg_welcome_back_user">Welcome Back User\!</string>
     <string name="msg_20_february_2024">20 February 2024</string>
     <string name="msg_108_22402_16_25">\@108.22402 16:25</string>
     <string name="lbl_tesla">Tesla</string>
@@ -251,6 +250,7 @@ understand it</string>
     <string name="lbl">-</string>
     <string name="msg_tap_on_options_to">Tap on options to select the correct answer</string>
     <string name="msg_congratulations">Congratulations \! We found you a buyer</string>
+
     <string name="lbl_x100">x100</string>
     <string name="lbl_tew_jia_sheng">Tew Jia Sheng</string>
     <string name="msg_there_is_a_5_of">there is a 5% of commission fee    deducted to agent</string>
@@ -305,4 +305,6 @@ understand it</string>
     <string name="lbl_100_lots">100 lots</string>
     <string name="msg_lot_to_sell">Kindly specify the quantity of lots you wish to sell :</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
