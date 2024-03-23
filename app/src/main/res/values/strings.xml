@@ -111,7 +111,7 @@ min</string>
 min</string>
     <string name="lbl_07">.07</string>
     <string name="lbl_6_44">-$6.44</string>
-    <string name="msg_this_is_example">This is example that what can i do for you.</string>
+    <string name="msg_this_is_example">This is example of what can I do for you.</string>
     <string name="msg_today_transactions">Today Transactions</string>
     <string name="msg_current_trend_analysis_the">
     "Current Trend Analysis:
@@ -219,7 +219,7 @@ min</string>
     <string name="lbl_35_pts">35 pts</string>
     <string name="lbl_36_96">-$36.96</string>
     <string name="lbl_see_more">See More</string>
-    <string name="msg_chatgpt_launched">ChatGPT launched in November 2022.</string>
+    <string name="msg_from_user">What is ChatGPT</string>
     <string name="msg_how_much_can_you">How much can you make with trading?</string>
     <string name="lbl_microsoft_corp">Microsoft Corp.</string>
     <string name="lbl_leaderboard">LEADERBOARD</string>

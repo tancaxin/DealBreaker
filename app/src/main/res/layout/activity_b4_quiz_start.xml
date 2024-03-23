@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageArrowThree"
+                    android:id="@+id/imageArrowBack"
                     android:layout_width="16dp"
                     android:layout_height="30dp"
                     android:layout_gravity="top"
