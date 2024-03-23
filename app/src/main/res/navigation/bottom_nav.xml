@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/DestCourse">
+
+    <activity
+        android:id="@+id/DestTrade"
+        android:name="com.example.investiq.TradeMainActivity"
+        android:label="activity_trade_main"
+        tools:layout="@layout/activity_trade_main" />
+    <activity
+        android:id="@+id/DestCourse"
+        android:name="com.example.investiq.Course"
+        android:label="activity_course"
+        tools:layout="@layout/activity_course" />
+    <activity
+        android:id="@+id/DestChapter"
+        android:name="com.example.investiq.Chapter"
+        android:label="activity_chapter"
+        tools:layout="@layout/activity_chapter" />
+</navigation>

@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/white_A700"/>
-    <corners android:radius="@dimen/_12pxh"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow shape -->
+    <item android:top="@dimen/_8pxv" android:elevation="@dimen/_16pxv">
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000" /> <!-- Semi-transparent dark grey color -->
+            <corners
+                android:topLeftRadius="@dimen/_75pxh"
+                android:topRightRadius="@dimen/_75pxh"
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp" />
+        </shape>
+    </item>
+
+    <!-- Background shape with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white_A700" />
+            <corners
+                android:topLeftRadius="@dimen/_75pxh"
+                android:topRightRadius="@dimen/_75pxh"
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp" />
+        </shape>
+    </item>
+
+</layer-list>

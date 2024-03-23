@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/DestTrade"
+        android:icon="@drawable/img_icon_gray_500_04"
+        android:title="Trade"/>
+
+    <item
+        android:id="@id/DestCourse"
+        android:icon="@drawable/img_icon_teal_200"
+        android:title="Course"/>
+
+
+</menu>
