@@ -166,7 +166,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$2,043,024.34"/>
+                        android:text="$243,024.34"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -222,7 +222,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$2,001,974.51"/>
+                        android:text="$231,974.51"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -278,7 +278,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,917,459.50"/>
+                        android:text="197,459.50"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -334,7 +334,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,900,029.32"/>
+                        android:text="$180,029.32"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -390,7 +390,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,827,028.42"/>
+                        android:text="$177,028.42"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -446,7 +446,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,802,903.23"/>
+                        android:text="$172,903.23"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -502,7 +502,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,700,389.12"/>
+                        android:text="$160,389.12"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -558,7 +558,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,679,894.42"/>
+                        android:text="$149,894.42"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -614,7 +614,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,582,942.65"/>
+                        android:text="$132,242.65"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -670,7 +670,7 @@
                         android:layout_width="wrap_content"
                         android:singleLine="true"
                         style="@style/txtPlusJakartaSansromanregular14"
-                        android:text="$1,384,392.09"/>
+                        android:text="$124,392.09"/>
                 </LinearLayout>
 
                 <TextView android:ellipsize="end"
