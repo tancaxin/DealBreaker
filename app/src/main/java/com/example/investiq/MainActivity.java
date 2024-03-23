@@ -1,38 +1,49 @@
 package com.example.investiq;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.snackbar.Snackbar;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import android.view.View;
+
+import androidx.fragment.app.FragmentContainerView;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    FragmentContainerView mainFragmentContainer;
+    BottomNavigationView bottomBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        final Button btnProfile = findViewById(R.id.btnProfile);
+        mainFragmentContainer = findViewById(R.id.mainFragmentContainer);
+        bottomBar = findViewById(R.id.bottom_nav_view);
 
-        btnProfile.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, profile_page.class));
-        });
+        NavHostFragment host = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.mainFragmentContainer);
+        NavController navController = host.getNavController();
 
-        final Button btnHome = findViewById(R.id.btnHome);
 
-        btnHome.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, home.class));
-        });
+        setupBottomNavMenuNormUser(navController);
+        navController.setGraph(R.navigation.bottom_nav);
+    }
+
+    private void setupBottomNavMenuNormUser(NavController navController) {
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav_view);
+        bottomNav.getMenu().clear();  // Clear existing menu items
+        bottomNav.inflateMenu(R.menu.bottom_nav_menu);
+        NavigationUI.setupWithNavController(bottomNav, navController);
+
     }
 }

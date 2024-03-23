@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Chapter">
+
+    <LinearLayout android:id="@+id/linearColumnarrowOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleyellow_50">
+    <LinearLayout android:id="@+id/linearChapter"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameStackintroducti"
+            android:layout_height="@dimen/_178pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageImage"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_200pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" android:src="@drawable/img_frame_32"/>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtIntroductionto1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/txtPoppinsextrabold35" android:text="@string/msg_introduction_to"/>
+        </FrameLayout>
+
+
+        <LinearLayout android:id="@+id/linearColumntime"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_69pxv"
+            android:paddingEnd="@dimen/_24pxh"
+            android:paddingStart="@dimen/_24pxh"
+            android:paddingTop="@dimen/_69pxv" style="@style/groupStylewhite_A700cornerRadius">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/bornATrader"
+                    android:layout_height="@dimen/_80pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_14pxh"
+                    android:paddingStart="@dimen/_14pxh"
+                    android:paddingTop="@dimen/_16pxv" style="@style/groupStyleyellow_100cornerRadius">
+                    <LinearLayout android:id="@+id/frame_duration"
+                        android:layout_height="@dimen/_45pxh"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_2pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_2pxv" style="@style/groupStyleblue_gray_1">
+                        <TextView android:gravity="center"
+                            android:id="@+id/txtTime"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            style="@style/txtPoppinsregular14" android:text="@string/lbl_6_min"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end" android:id="@+id/txtTitle"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_175pxh"
+                        android:singleLine="true"
+                        style="@style/txtPoppinsbold18_1" android:text="@string/lbl_born_a_trader"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/arrowImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            tools:ignore="ContentDescription"
+                            android:src="@drawable/img_vector_orange_200_01" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandedView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/img_book"
+                                android:layout_width="@dimen/_47pxh"
+                                android:layout_height="@dimen/_37pxh"
+                                android:layout_gravity="center"
+                                android:padding="4dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_coin"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:id="@+id/earnCoins"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_18pxh"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="5dp"
+                                android:text="Learn to Collect $1000" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/expandedTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_18pxh"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="The ultimate guide for beginners on how to trade stocks." />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/howMuchCanMake"
+                        android:layout_height="@dimen/_80pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_14pxh"
+                        android:paddingStart="@dimen/_14pxh"
+                        android:paddingTop="@dimen/_16pxv" style="@style/groupStyleorange_100cornerRadius">
+                        <LinearLayout android:id="@+id/frame_duration_howMuch"
+                            android:layout_height="@dimen/_45pxh"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_2pxv"
+                            android:paddingEnd="@dimen/_13pxh"
+                            android:paddingStart="@dimen/_13pxh"
+                            android:paddingTop="@dimen/_2pxv" style="@style/groupStyleblue_gray_1">
+                            <TextView android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/white"
+                                style="@style/txtPoppinsregular14" android:text="@string/lbl_6_min"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtHowMuch"
+                            android:layout_width="@dimen/_175pxh"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            style="@style/txtPoppinsbold18_1"
+                            android:text="@string/msg_how_much_can_you" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30pxh"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/arrowImageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                tools:ignore="ContentDescription"
+                                android:src="@drawable/img_vector_yellow_100" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/TradingVs"
+                        android:layout_height="@dimen/_80pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_14pxh"
+                        android:paddingStart="@dimen/_14pxh"
+                        android:paddingTop="@dimen/_16pxv" style="@style/groupStyleyellow_100cornerRadius">
+                        <LinearLayout
+                            android:layout_height="@dimen/_45pxh"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_2pxv"
+                            android:paddingEnd="@dimen/_13pxh"
+                            android:paddingStart="@dimen/_13pxh"
+                            android:paddingTop="@dimen/_2pxv" style="@style/groupStyleblue_gray_1">
+                            <TextView android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/white"
+                                style="@style/txtPoppinsregular14" android:text="@string/lbl_6_min"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtTrading"
+                            android:layout_width="@dimen/_175pxh"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            style="@style/txtPoppinsbold18_1"
+                            android:text="@string/msg_trading_vs_investment" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30pxh"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/arrowImageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                tools:ignore="ContentDescription"
+                                android:src="@drawable/img_vector_orange_200_01" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+            <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/fiveRules"
+                        android:layout_height="@dimen/_80pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_14pxh"
+                        android:paddingStart="@dimen/_14pxh"
+                        android:paddingTop="@dimen/_16pxv" style="@style/groupStyleorange_100cornerRadius">
+                        <LinearLayout
+                            android:layout_height="@dimen/_45pxh"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_2pxv"
+                            android:paddingEnd="@dimen/_13pxh"
+                            android:paddingStart="@dimen/_13pxh"
+                            android:paddingTop="@dimen/_2pxv" style="@style/groupStyleblue_gray_1">
+                            <TextView android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/white"
+                                style="@style/txtPoppinsregular14" android:text="@string/lbl_6_min"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txt5Rules"
+                            android:layout_width="@dimen/_175pxh"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            style="@style/txtPoppinsbold18_1"
+                            android:text="@string/msg_the_5_asset_rule" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30pxh"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/arrowImageView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                tools:ignore="ContentDescription"
+                                android:src="@drawable/img_vector_yellow_100" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
