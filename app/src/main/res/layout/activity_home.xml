@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <LinearLayout
+        android:id="@+id/linearColumnvectorOne"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            style="@style/groupStyleblue_gray_800_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearRowvectorOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="145dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageVectorOne"
+                    android:layout_width="21dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_white_a700" />
+
+                <TextView
+                    android:id="@+id/txtHome"
+                    style="@style/txtKhulabold18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/lbl_home" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageUnsplashOne"
+                android:layout_width="@dimen/_47pxh"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_unsplash_pata8xe_ivm" />
+
+            <TextView
+                android:id="@+id/txtWelcomeback"
+                style="@style/txtPoppinsbold12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_welcome_back"
+                android:textAllCaps="true"
+                 />
+        </LinearLayout>
+
+        <FrameLayout android:id="@+id/frameStacktotalbalan"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_95pxv"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="370dp"
+            style="@style/groupStylecornerRadius"
+
+
+            >
+            <View
+
+                android:id="@+id/viewTotalbalance"
+                android:layout_gravity="bottom|center"
+                android:layout_height="95dp" android:layout_width="600dp"
+
+                />
+            <LinearLayout
+                android:id="@+id/linearColumntotalbala"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_173pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTotalbalance"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_total_balance"
+                    style="@style/txtPoppinsmedium15" />
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_140203_38"
+                    style="@style/txtPoppinssemibold20" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtPrice1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="@dimen/_10pxh"
+            android:singleLine="true"
+            android:text="@string/msg_courses_available"
+            android:textAllCaps="true"
+            style="@style/txtPoppinslight20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearCourse1"
+                android:layout_height="wrap_content"
+                android:layout_width="370dp"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:paddingBottom="@dimen/_8pxv"
+                android:paddingEnd="@dimen/_14pxh"
+                android:paddingStart="@dimen/_14pxh"
+                android:paddingTop="@dimen/_8pxv" style="@style/groupStyleindigo_100cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtIntroductionto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/msg_introduction_to"
+                    style="@style/txtKhulalight14" />
+                <TextView android:id="@+id/txtFoundational"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_width="match_parent"
+                    android:text="@string/msg_foundational_overview"
+                    style="@style/txtPoppinslight9" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLeaderboard"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="@dimen/_10pxh"
+            android:singleLine="true"
+            android:text="LEADERBOARD"
+            android:textAllCaps="true"
+            style="@style/txtPoppinslight20" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/profile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="@string/lbl_1"/>
+                    <ImageView android:id="@+id/imageUserImage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="@string/lbl_marsha_fisher"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$2,043,024.34"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="2"/>
+                    <ImageView android:id="@+id/imageUserImage2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Deon Mak"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$2,001,974.51"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="3"/>
+                    <ImageView android:id="@+id/imageUserImage3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Xueting Chin"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,917,459.50"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="4"/>
+                    <ImageView android:id="@+id/imageUserImage4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Noah Anderson"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,900,029.32"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="5"/>
+                    <ImageView android:id="@+id/imageUserImage5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Joan Lew"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,827,028.42"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="6"/>
+                    <ImageView android:id="@+id/imageUserImage6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Ethan Lee"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,802,903.23"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="7"/>
+                    <ImageView android:id="@+id/imageUserImage7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Naomi Tan"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,700,389.12"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="8"/>
+                    <ImageView android:id="@+id/imageUserImage8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Kylie Hamming"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,679,894.42"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="9"/>
+                    <ImageView android:id="@+id/imageUserImage9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Jingwen Wong"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,582,942.65"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView android:ellipsize="end" android:id="@+id/txtOne10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txt" android:text="10"/>
+                    <ImageView android:id="@+id/imageUserImage10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_ellipse_56"
+                        />
+                    <TextView android:ellipsize="end" android:id="@+id/txtUserName10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="160dp"
+                        android:singleLine="true"
+                        android:text="Shen Lee"
+                        style="@style/txtPlusJakartaSansromanbold14" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUserPoints10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="$1,384,392.09"
+                        style="@style/txtPlusJakartaSansromanregular14" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
