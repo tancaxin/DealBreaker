@@ -44,5 +44,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.getMenu().clear();  // Clear existing menu items
         bottomNav.inflateMenu(R.menu.bottom_nav_menu);
         NavigationUI.setupWithNavController(bottomNav, navController);
+
     }
 }

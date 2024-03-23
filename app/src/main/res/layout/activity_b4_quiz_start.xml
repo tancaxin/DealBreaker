@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".B4QuizStartActivity">
+
+    <LinearLayout android:id="@+id/screen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            android:elevation="5dp"
+            style="@style/groupStyleblue_gray_800_02">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageArrowBack"
+                    android:layout_width="16dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="24dp"
+                    android:src="@drawable/img_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_arrow" />
+
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCourseTitle"
+                    android:layout_gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    style="@style/txtPoppinsbold20White"
+                    android:text="Introduction to Finance"
+                    android:layout_height="wrap_content" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/scrollViewScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout android:id="@+id/linearColumnthirtysix"
+                android:paddingTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearTitleheader"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnquiztitle"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtQuiztitle"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            style="@style/txtPoppinsbold22_BlueGray"
+                            android:text="@string/msg_born_a_trader_quiz"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPrice"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            style="@style/txtPoppinssemibold15"
+                            android:text="@string/lbl_get_1000"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imgStar"
+                        android:layout_height="@dimen/_22pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_22pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_36"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView android:ellipsize="end"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:id="@+id/txtFortyEight"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_6pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPoppinssemibold20BlueGray"
+                        android:text="@string/lbl_4_8"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameStacksalyfiftee"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_198pxv"
+                    android:layout_marginTop="@dimen/_40pxv"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh">
+                    <ImageView android:id="@+id/imageSalyfifteenOne"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_220pxh"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_width="@dimen/_122pxh"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_saly_15"/>
+                    <LinearLayout android:id="@+id/linearBrief"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_71pxh"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBrief"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            style="@style/txtPoppinsbold18"
+                            android:text="@string/msg_brief_explanation"/>
+                        <LinearLayout android:id="@+id/linearQuestionCount"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_43pxh"
+                            android:layout_marginTop="@dimen/_19pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_20"
+                                android:id="@+id/btnFortyfourOne"
+                                android:layout_gravity="top"
+                                android:layout_height="@dimen/_40pxh"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_width="@dimen/_40pxh"
+                                android:paddingHorizontal="@dimen/_8pxh"
+                                android:paddingVertical="@dimen/_8pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_44"
+                                tools:ignore="ContentDescription"/>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearQuestioninfo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16pxh"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtQuestionCounter"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    style="@style/txtPoppinssemibold16_1"
+                                    android:text="@string/lbl_10_question"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtPrice1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    style="@style/txtPoppinsregular14"
+                                    android:text="@string/msg_10_for_a_correct"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearDuration"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_36pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_20"
+                                android:id="@+id/btnTwelveOne"
+                                android:layout_gravity="top"
+                                android:layout_height="@dimen/_40pxh"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_width="@dimen/_40pxh"
+                                android:paddingHorizontal="@dimen/_8pxh"
+                                android:paddingVertical="@dimen/_8pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_12" tools:ignore="ContentDescription"/>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearDurationinfo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16pxh"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtDuration"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    style="@style/txtPoppinssemibold16_1"
+                                    android:text="@string/lbl_20_minutes"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtTotalduration"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    style="@style/txtPoppinsregular14"
+                                    android:text="@string/msg_total_duration_of"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearPoints"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_20"
+                                android:id="@+id/btnThirtysixThree"
+                                android:layout_gravity="top"
+                                android:layout_height="@dimen/_40pxh"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_width="@dimen/_40pxh"
+                                android:paddingHorizontal="@dimen/_8pxh"
+                                android:paddingVertical="@dimen/_8pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_36_white_a700" tools:ignore="ContentDescription"/>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearPointsinfo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16pxh"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtPointscount"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    style="@style/txtPoppinssemibold16_1"
+                                    android:text="@string/lbl_win_1000"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAnswerall"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    style="@style/txtPoppinsregular14"
+                                    android:text="@string/msg_answer_all_questions"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_7pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="match_parent"
+                    style="@style/txtPoppinsbold18"
+                    android:text="@string/msg_please_read_the"/>
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearPoint1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View
+                        android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_3"
+                        android:id="@+id/point1"
+                        android:layout_height="@dimen/_6pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_6pxh"/>
+                    <TextView android:id="@+id/txtDescription1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/txtPoppinsregular16BlueGray"
+                        android:text="@string/msg_100_awarded"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearPoint2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_3"
+                        android:id="@+id/point2"
+                        android:layout_height="@dimen/_6pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="@dimen/_6pxh"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDescription2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        style="@style/txtPoppinsregular16BlueGray"
+                        android:text="@string/msg_tap_on_options_to"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearPoint3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View
+                        android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_3"
+                        android:id="@+id/point3"
+                        android:layout_height="@dimen/_6pxh"
+                        android:layout_marginBottom="@dimen/_30pxv"
+                        android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_6pxh"/>
+                    <TextView android:id="@+id/txtDescription3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/txtPoppinsregular16BlueGray"
+                        android:text="@string/msg_green_indicates"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearPoint4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View
+                        android:background="@drawable/rectangle_bg_blue_gray_900_01_radius_3"
+                        android:id="@+id/point4"
+                        android:layout_height="@dimen/_6pxh"
+                        android:layout_marginBottom="@dimen/_30pxv"
+                        android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_6pxh"/>
+                    <TextView android:id="@+id/txtDescription4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/txtPoppinsregular16BlueGray"
+                        android:text="@string/msg_you_will_be_directed"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnStartQuiz"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="@dimen/_48pxv"
+                    android:layout_marginEnd="@dimen/_79pxh"
+                    android:layout_marginStart="@dimen/_78pxh"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_start_quiz"
+                    android:textAllCaps="false"
+                    style="@style/btnGradientRounded" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

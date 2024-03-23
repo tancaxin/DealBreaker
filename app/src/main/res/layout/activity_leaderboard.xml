@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardActivity">
+
+    <LinearLayout android:id="@+id/screen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            android:elevation="5dp"
+            style="@style/groupStyleblue_gray_800_02">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageArrowBack"
+                    android:layout_width="16dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="24dp"
+                    android:src="@drawable/img_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_arrow" />
+
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLeaderboard"
+                    android:layout_gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    style="@style/txtPoppinsbold20White"
+                    android:text="@string/lbl_leaderboard"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/btnTradingRule"
+                    android:layout_width="25dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="24dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_guidance"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/scrollViewScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearColumntimetillt"
+                android:layout_gravity="top|center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_15pxh"
+                android:paddingStart="@dimen/_15pxh"
+                android:paddingTop="@dimen/_10pxv"
+                style="@style/groupStyle">
+
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtTimetillthis"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:singleLine="true"
+                    style="@style/txtPoppinslight15"
+                    android:text="@string/msg_time_till_this_week_s"/>
+
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtDuration"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="@dimen/_9pxh"
+                    android:singleLine="true"
+                    style="@style/txtPoppinsbold22_BlueGray"
+                    android:text="@string/msg_4_days_24_minutes"/>
+
+                <LinearLayout
+                    android:id="@+id/linearNum1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_1"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_56"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName1"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_marsha_fisher"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$243,024.34"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_2"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_unsplash_pata8xe_ivm"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName2"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Deon Mak"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney2"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$231,974.51"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_3"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_9"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName3"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Xueting Chin"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney3"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$197,459.50"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_4"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_19"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName4"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Noah Anderson"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney4"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$180,029.32"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_5"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_11"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName5"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Joan Lew"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney5"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$177,028.42"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum6"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_6"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_10"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName6"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Ethan Lee"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney6"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$172,903.23"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_7"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_16"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName7"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Naomi Tan"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney7"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$160,389.12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum8"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_8"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_56"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName8"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Kylie Hamming"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney8"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$149,894.42"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_9"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_17"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName9"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Jingwen Wong"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney9"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$132,242.65"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNum10"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    style="@style/groupStylewhite_A700cornerRadius">
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNum10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/etPoppinsmedium15"
+                        android:text="@string/lbl_10"/>
+
+                    <ImageView
+                        android:id="@+id/imagePlayer10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        android:src="@drawable/img_ellipse_12"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPlayerName10"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        style="@style/etPoppinsmedium15"
+                        android:text="Shen Lee"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMoney10"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        style="@style/txtPlusJakartaSansromanregular14"
+                        android:text="$124,392.09"/>
+                </LinearLayout>
+
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtMakeyourself"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:singleLine="true"
+                    style="@style/txtPoppinsregular14_1"
+                    android:text="Make yourself into the top 10 list!"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout android:gravity="center_horizontal"
+            android:id="@+id/frameBottombar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/groupStyleblue_gray_800_02">
+
+            <ImageView android:id="@+id/imageIconsOne"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_21pxh"
+                android:layout_marginBottom="@dimen/_17pxv"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="@dimen/_290pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_icons_blue_200"
+                tools:ignore="ContentDescription" />
+
+        </FrameLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

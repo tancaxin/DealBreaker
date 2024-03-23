@@ -29,6 +29,39 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".profile_page"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizFinishedLess50Activity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizFinishedGreater50Activity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizQ1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizQ10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TradeMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TradingHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".B4QuizStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

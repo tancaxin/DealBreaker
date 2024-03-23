@@ -1,0 +1,16 @@
+<!-- background_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/blue_gray_100" /> <!-- Background color -->
+
+    <corners android:radius="@dimen/_16pxh" /> <!-- Radius for rounded corners -->
+
+    <size
+        android:width="@dimen/_32pxh"
+        android:height="@dimen/_32pxh" /> <!-- Size of each item -->
+
+    <stroke
+        android:width="@dimen/_1pxh"
+    android:color="@android:color/transparent" />
+</shape>
