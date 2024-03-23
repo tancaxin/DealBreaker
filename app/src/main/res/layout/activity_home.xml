@@ -29,19 +29,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/imageArrowBack"
-                    android:layout_width="16dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="top"
-                    android:layout_marginStart="24dp"
-                    android:src="@drawable/img_arrow"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_arrow" />
-
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtHome"
                     android:layout_gravity="center_vertical"
