@@ -12,37 +12,46 @@
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStylewhite_A700">
         <androidx.appcompat.widget.Toolbar
-            android:gravity="center_horizontal"
             android:id="@+id/toolbarToolbar"
-            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
             android:layout_width="match_parent"
-            app:contentInsetStart="0dp" style="@style/groupStyleblue_gray_800_02">
-            <LinearLayout android:id="@+id/linearRowvectorOne"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:layout_marginEnd="145dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="21dp"
-                android:layout_width="match_parent" android:orientation="horizontal">
-                <ImageView android:id="@+id/imageVectorOne"
-                    android:layout_gravity="center_vertical"
-                    android:layout_height="19dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="21dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_vector_white_a700"
-                    />
+            app:contentInsetStart="0dp"
+            android:elevation="5dp"
+            style="@style/groupStyleblue_gray_800_02">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageArrowBack"
+                    android:layout_width="16dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="24dp"
+                    android:src="@drawable/img_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_arrow" />
+
                 <TextView android:ellipsize="end"
-                    android:id="@+id/txtHome"
+                    android:id="@+id/txtProfile"
                     android:layout_gravity="center_vertical"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
+                    style="@style/txtPoppinsbold20White"
                     android:text="@string/lbl_profile"
-                    style="@style/txtKhulabold18" />
-            </LinearLayout>
+                    android:layout_height="wrap_content" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.Toolbar>
         <LinearLayout android:id="@+id/linearProfilepage"
             android:layout_height="wrap_content"
