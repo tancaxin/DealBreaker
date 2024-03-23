@@ -1,6 +1,8 @@
 package com.example.investiq;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -8,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -19,6 +22,7 @@ import androidx.navigation.ui.NavigationUI;
 
 public class Chapter extends AppCompatActivity {
 
+    ImageView back;
     private LinearLayout bornATrader;
     private LinearLayout expandedView;
 private ImageView arrowImageView,arrowImageView2,arrowImageView3,arrowImageView4;
@@ -31,6 +35,15 @@ private ImageView arrowImageView,arrowImageView2,arrowImageView3,arrowImageView4
         bornATrader = findViewById(R.id.bornATrader);
     expandedView = findViewById(R.id.expandedView);
         arrowImageView = findViewById(R.id.arrowImageView);
+        back = findViewById(R.id.imageArrowBack);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Chapter.this, Course.class);
+                startActivity(intent);
+            }
+        });
 
 
         bornATrader.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +60,15 @@ private ImageView arrowImageView,arrowImageView2,arrowImageView3,arrowImageView4
             }
         }
     });
+
+        expandedView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Chapter.this, VideoActivity.class);
+                startActivity(intent);
+            }
+        });
+
 }
 
     private void toggleExpandedState() {
