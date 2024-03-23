@@ -13,6 +13,12 @@
         android:theme="@style/Theme.InvestIQ"
         tools:targetApi="31">
         <activity
+            android:name=".profile_page"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
             android:name=".transaction_history_activtiy"
             android:exported="false" />
         <activity
