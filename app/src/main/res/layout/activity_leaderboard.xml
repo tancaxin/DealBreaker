@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageArrowThree"
+                    android:id="@+id/imageArrowBack"
                     android:layout_width="16dp"
                     android:layout_height="30dp"
                     android:layout_gravity="top"
@@ -41,7 +41,7 @@
                     tools:src="@drawable/img_arrow" />
 
                 <TextView android:ellipsize="end"
-                    android:id="@+id/txtPrice"
+                    android:id="@+id/txtLeaderboard"
                     android:layout_gravity="center_vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"

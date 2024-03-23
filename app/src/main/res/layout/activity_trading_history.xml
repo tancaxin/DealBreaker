@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TransactionHistoryActivity">
+    tools:context=".TradingHistoryActivity">
     <LinearLayout android:id="@+id/tradingHistoryScreen"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageArrowThree"
+                    android:id="@+id/imageArrowBack"
                     android:layout_width="16dp"
                     android:layout_height="30dp"
                     android:layout_gravity="top"
@@ -70,7 +70,6 @@
             android:gravity="center_horizontal"
             android:id="@+id/scrollViewScrollview"
             android:layout_height="0dp"
-            android:layout_marginTop="15dp"
             android:layout_weight="1"
             android:layout_width="match_parent">
 
@@ -84,6 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
                     android:singleLine="true"
                     style="@style/txtPoppinsregular16_1"
                     android:text="@string/lbl_14_march_2024"/>
@@ -310,11 +310,11 @@
                                 tools:ignore="ContentDescription" />
                             <ImageView android:id="@+id/imgGoogle"
                                 android:layout_gravity="center"
-                                android:layout_height="@dimen/_25pxh"
+                                android:layout_height="@dimen/_30pxh"
                                 android:layout_width="@dimen/_35pxh"
                                 android:scaleType="fitXY"
                                 tools:ignore="ContentDescription"
-                                android:src="@drawable/img_rectangle_26"/>
+                                android:src="@drawable/img_group_1748"/>
                         </FrameLayout>
                         <LinearLayout android:gravity="start"
                             android:id="@+id/infoBuyGoogle"
@@ -824,7 +824,7 @@
                                 android:layout_width="@dimen/_35pxh"
                                 android:scaleType="fitXY"
                                 tools:ignore="ContentDescription"
-                                android:src="@drawable/img_tesla"/>
+                                android:src="@drawable/img_ellipse_73"/>
                         </FrameLayout>
                         <LinearLayout android:gravity="start"
                             android:id="@+id/infoSellUSDCAD"
@@ -898,7 +898,7 @@
                     android:layout_marginStart="10dp"
                     android:singleLine="true"
                     style="@style/txtPoppinsregular16_1"
-                    tools:text="@string/msg_20_february_2024"/>
+                    android:text="@string/msg_20_february_2024"/>
 
                 <LinearLayout android:id="@+id/trading20Feb"
                     android:layout_height="wrap_content"
@@ -1029,9 +1029,9 @@
                             <ImageView android:id="@+id/imgGoogle2"
                                 android:layout_gravity="center"
                                 android:layout_height="@dimen/_30pxh"
-                                android:layout_width="@dimen/_30pxh"
+                                android:layout_width="@dimen/_35pxh"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/img_rectangle_6425"
+                                android:src="@drawable/img_group_1748"
                                 tools:ignore="ContentDescription" />
                         </FrameLayout>
                         <LinearLayout android:gravity="start"
@@ -1122,11 +1122,11 @@
                                 tools:ignore="ContentDescription" />
                             <ImageView android:id="@+id/imgExxon2"
                                 android:layout_gravity="center"
-                                android:layout_height="@dimen/_35pxh"
-                                android:layout_width="@dimen/_35pxh"
+                                android:layout_height="@dimen/_25pxh"
+                                android:layout_width="@dimen/_40pxh"
                                 android:scaleType="fitXY"
-                                tools:ignore="ContentDescription"
-                                android:src="@drawable/img_rectangle_17"/>
+                                android:src="@drawable/img_rectangle_17"
+                                tools:ignore="ContentDescription" />
                         </FrameLayout>
                         <LinearLayout android:gravity="start"
                             android:id="@+id/infoBuyExxon2"
@@ -1286,46 +1286,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/rectangle_bg_blue_gray_800_03_radius_4"
-                    android:layout_gravity="end"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:background="@drawable/rectangle_bg_blue_gray_800_03_radius_4"
-                        android:ellipsize="end"
-                        android:id="@+id/btnSeeMore"
-                        android:layout_height="40dp"
-                        android:layout_width="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="20dp"
-                        android:singleLine="true"
-                        android:text="@string/lbl_see_more"
-                        android:textColor="@color/white_A700_02"
-                        style="@style/etSolidRounded"
-                        android:gravity="center"
-                        tools:ignore="Autofill"/>
-
-                    <ImageView android:id="@+id/imgRightArrow"
-                        android:layout_gravity="center"
-                        android:layout_height="@dimen/_15pxh"
-                        android:layout_width="@dimen/_25pxh"
-                        android:scaleType="fitXY"
-                        tools:ignore="ContentDescription"
-                        android:src="@drawable/img_arrow_white_a700"/>
-
-
-                </LinearLayout>
-
-
-
-
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

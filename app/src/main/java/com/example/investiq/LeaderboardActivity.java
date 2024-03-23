@@ -1,6 +1,7 @@
 package com.example.investiq;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -15,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LeaderboardActivity extends AppCompatActivity {
     LinearLayout screen;
-    ImageView btnTradingRule;
+    ImageView btnTradingRule, arrowBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,14 @@ public class LeaderboardActivity extends AppCompatActivity {
 
         screen = findViewById(R.id.screen);
         btnTradingRule = findViewById(R.id.btnTradingRule);
+        arrowBack = findViewById(R.id.imageArrowBack);
+        arrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LeaderboardActivity.this, home.class);
+                startActivity(intent);
+            }
+        });
 
         btnTradingRule.setOnClickListener(new View.OnClickListener() {
             @Override

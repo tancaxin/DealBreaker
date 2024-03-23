@@ -3,24 +3,25 @@ package com.example.investiq;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class profile_page extends AppCompatActivity {
-    TextView txtMore;
+public class TradingHistoryActivity extends AppCompatActivity {
 
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_page);
+        setContentView(R.layout.activity_trading_history);
 
-        txtMore = findViewById(R.id.txtMore);
 
-        txtMore.setOnClickListener(new View.OnClickListener() {
+        back = findViewById(R.id.imageArrowBack);
+
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(profile_page.this, TradingHistoryActivity.class);
+                Intent intent = new Intent(TradingHistoryActivity.this, profile_page.class);
                 startActivity(intent);
             }
         });
