@@ -242,7 +242,6 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -264,6 +263,94 @@
                                 android:layout_gravity="end"
                                 android:background="@color/blue_gray_100_7f" />
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ques8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+
+                            android:gravity="center">
+
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtQues8"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                style="@style/txtPoppinsbold18_2"
+                                android:layout_marginBottom="10dp"
+                                android:text="8"
+                                android:gravity="center"
+                                android:background="@drawable/round_quiz_question"/>
+
+                            <View
+                                android:background="@color/blue_gray_100_7f"
+                                android:id="@+id/lineQues8"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_3pxv"
+                                android:layout_width="@dimen/_46pxh"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ques9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+
+                            android:gravity="center">
+
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtQues9"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                style="@style/txtPoppinsbold18_2"
+                                android:layout_marginBottom="10dp"
+                                android:text="9"
+                                android:gravity="center"
+                                android:background="@drawable/round_quiz_question"/>
+
+                            <View
+                                android:background="@color/blue_gray_100_7f"
+                                android:id="@+id/lineQues9"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_3pxv"
+                                android:layout_width="@dimen/_46pxh"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ques10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtQues10"
+                                style="@style/txtPoppinsbold18_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/round_quiz_question"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:text="10" />
+
+                            <View
+                                android:id="@+id/lineQues10"
+                                android:layout_width="@dimen/_46pxh"
+                                android:layout_height="@dimen/_3pxv"
+                                android:layout_gravity="end"
+                                android:background="@color/blue_gray_100_7f" />
+                        </LinearLayout>
+
+
+
                     </LinearLayout>
                 </HorizontalScrollView>
 

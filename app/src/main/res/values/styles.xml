@@ -116,6 +116,7 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">700</item>
     </style>
+
     <style name="txtKosugiMaruregular16">
         <item name="android:textSize">@dimen/_16pxh</item>
         <item name="android:textColor">@color/white_A700_02</item>
@@ -225,7 +226,7 @@
         <item name="android:background">@drawable/rectangle_bg_deep_purple_50_radius_20</item>
     </style>
     <style name="groupStylewhite_A700_3fcornerRadius">
-        <item name="android:background">@drawable/rectangle_bg_white_a700_3f_radius_101</item>
+        <item name="android:background">@drawable/round_score_2_bg_blue</item>
     </style>
     <style name="txtIntermedium24">
         <item name="android:textSize">@dimen/_24pxh</item>
@@ -257,6 +258,12 @@
     <style name="txtPoppinsbold20">
         <item name="android:textSize">@dimen/_20pxh</item>
         <item name="android:textColor">@color/black_900_03</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="txtPoppinsbold20Blue">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/blue_gray_800_02</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">700</item>
     </style>
@@ -800,6 +807,7 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">500</item>
     </style>
+
     <style name="totalLotObtain">
         <item name="android:textSize">@dimen/_16pxh</item>
         <item name="android:textColor">@color/red_900</item>

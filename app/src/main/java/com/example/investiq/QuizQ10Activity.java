@@ -11,14 +11,14 @@ import android.widget.HorizontalScrollView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class QuizQ7Activity extends AppCompatActivity {
+public class QuizQ10Activity extends AppCompatActivity {
 
     Button opt1, opt2, opt3, opt4;
     HorizontalScrollView scrollView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_q7);
+        setContentView(R.layout.activity_quiz_q10);
 
         scrollView = findViewById(R.id.scrollView);
         scrollView.post(new Runnable() {
@@ -77,7 +77,7 @@ public class QuizQ7Activity extends AppCompatActivity {
             @Override
             public void run() {
                 // Create an Intent to start the next activity
-                Intent intent = new Intent(QuizQ7Activity.this, QuizQ7Activity.class);
+                Intent intent = new Intent(QuizQ10Activity.this, QuizFinishedGreater50Activity.class);
                 startActivity(intent);
 
                 // Finish the current activity to prevent the user from going back to it
@@ -100,7 +100,7 @@ public class QuizQ7Activity extends AppCompatActivity {
             @Override
             public void run() {
                 // Create an Intent to start the next activity
-                Intent intent = new Intent(QuizQ7Activity.this, QuizQ7Activity.class);
+                Intent intent = new Intent(QuizQ10Activity.this, QuizFinishedLess50Activity.class);
                 startActivity(intent);
 
                 // Finish the current activity to prevent the user from going back to it

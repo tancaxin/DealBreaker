@@ -68,7 +68,7 @@ public class QuizQ1Activity extends AppCompatActivity {
             @Override
             public void run() {
                 // Create an Intent to start the next activity
-                Intent intent = new Intent(QuizQ1Activity.this, QuizQ7Activity.class);
+                Intent intent = new Intent(QuizQ1Activity.this, QuizQ10Activity.class);
                 startActivity(intent);
 
                 // Finish the current activity to prevent the user from going back to it

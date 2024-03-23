@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">mak_wen_ee_s_application75</string>
     <string name="loading">Loading…</string>
-    <string name="no_internet_connection">No internet connection!</string>
+    <string name="no_internet_connection">No internet connection\!</string>
     <string name="lbl_198_24">198.24</string>
     <string name="lbl_108_225486">$108.225486</string>
     <string name="lbl_buy">BUY</string>
@@ -13,7 +13,7 @@
     <string name="lbl_correct">Correct</string>
     <string name="lbl_end_quiz">End quiz</string>
     <string name="lbl_jordan_pang">Jordan Pang</string>
-    <string name="msg_fabulous_keep_it">Fabulous! Keep it up.</string>
+    <string name="msg_fabulous_keep_it">Fabulous\! Keep it up.</string>
     <string name="lbl_born_a_trader">Born a Trader</string>
     <string name="lbl_portfolio">Portfolio</string>
     <string name="msg_112_45034_14_08">\@112.45034 14:08</string>
@@ -29,11 +29,11 @@
     <string name="lbl_alphabet_inc">Alphabet Inc.</string>
     <string name="msg_transaction_done">transaction done at : 14.03.2024  15:09</string>
     <string name="msg_139_85148_12_49">\@139.85148 12:49</string>
-    <string name="msg_10_for_a_correct">$10 for a correct answer</string>
-    <string name="msg_10_point_awarded">10 point awarded for a correct answer and no
+    <string name="msg_10_for_a_correct">$100 for a correct answer</string>
+    <string name="msg_100_awarded">$100 awarded for a correct answer and no
 marks for a incorrect answer</string>
     <string name="msg_trading_guidance">Trading Guidance</string>
-    <string name="msg_try_again_don_t">Try again, don\u2019t give up!</string>
+    <string name="msg_try_again_don_t">Try again, don\u2019t give up\!</string>
     <string name="msg_ai_generated_analysis">AI Generated Analysis :</string>
     <string name="lbl_louis">Louis</string>
     <string name="msg_you_will_be_directed">You will be directed to the next question once you made your choice of answer. Choose carefully.</string>
@@ -56,7 +56,7 @@ marks for a incorrect answer</string>
     <string name="msg_chatgpt_is_an_a">ChatGPT is an artificial-intelligence chatbot developed by OpenAI</string>
     <string name="lbl_snap">Snap</string>
     <string name="lbl_lyft_inc">Lyft Inc.</string>
-    <string name="lbl_get_100">GET $100 </string>
+    <string name="lbl_get_1000">GET $1000 </string>
     <string name="msg_choose_the_item2">Choose the item with the greatest benefits.</string>
     <string name="msg_9_30_am_to_4_00">9:30 AM to 4:00 PM EST on WEEKDAY </string>
     <string name="msg_foundational_overview">foundational overview of key principles in financial markets, investment</string>
@@ -94,7 +94,7 @@ min</string>
     <string name="lbl_20_minutes">20 minutes</string>
     <string name="msg_balance_must_be">3. Balance must be under 50% by 5:00 PM daily for active trading. Balances over 50% lead to disqualification.</string>
     <string name="lbl_addidas">Addidas</string>
-    <string name="msg_swap_success_trade">Swap Success: Trade with Players, Not Just Shares !</string>
+    <string name="msg_swap_success_trade">Swap Success: Trade with Players, Not Just Shares \!</string>
     <string name="lbl_amazon_com">Amazon.com</string>
     <string name="msg_search_players">Search players......</string>
     <string name="lbl_disney">Disney</string>
@@ -115,7 +115,7 @@ min</string>
     <string name="msg_today_transactions">Today Transactions</string>
     <string name="msg_current_trend_analysis_the">
     "Current Trend Analysis:
-The trend for Google over the last quarter shows a strong upward trajectory, with a 7% increase in stock value. This aligns with Google's recent announcements on expanding its cloud computing division, which has seen significant market approval.
+The trend for Google over the last quarter shows a strong upward trajectory, with a 7% increase in stock value. This aligns with Google\'s recent announcements on expanding its cloud computing division, which has seen significant market approval.
 
 Volume and Volatility:
 Trading volume has been consistently high, indicating strong interest from both retail and institutional investors. Volatility is within expected norms, suggesting that while there are daily fluctuations, the overall trend is stable.
@@ -195,7 +195,7 @@ min</string>
     <string name="lbl_6_00">6:00</string>
     <string name="lbl_x65">x65</string>
     <string name="lbl_litecoin">LiteCoin</string>
-    <string name="lbl_win_100_points">Win 100 points</string>
+    <string name="lbl_win_1000">Win $1000</string>
     <string name="msg_178_85384_x_2">\@178.85384 x 2  3:13 -&gt;</string>
     <string name="msg_when_deciding_which">When deciding which of the two items to purchase, one should always:</string>
     <string name="msg_173_78417_x_10">\@173.78417 x 10  15:29 -&gt;</string>
@@ -238,7 +238,7 @@ min</string>
     <string name="msg_share_109_661">SHARE : 109.661 USD</string>
     <string name="msg_2172_04807_16_19">\@2172.04807 16:19</string>
     <string name="msg_welcome_back_user">Welcome Back
-User!</string>
+User\!</string>
     <string name="msg_20_february_2024">20 February 2024</string>
     <string name="msg_108_22402_16_25">\@108.22402 16:25</string>
     <string name="lbl_tesla">Tesla</string>
@@ -250,7 +250,7 @@ User!</string>
 understand it</string>
     <string name="lbl">-</string>
     <string name="msg_tap_on_options_to">Tap on options to select the correct answer</string>
-    <string name="msg_congratulations">Congratulations ! We found you a buyer</string>
+    <string name="msg_congratulations">Congratulations \! We found you a buyer</string>
     <string name="lbl_x100">x100</string>
     <string name="lbl_tew_jia_sheng">Tew Jia Sheng</string>
     <string name="msg_there_is_a_5_of">there is a 5% of commission fee    deducted to agent</string>

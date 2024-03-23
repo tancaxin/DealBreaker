@@ -22,7 +22,7 @@
             android:name=".QuizQ1Activity"
             android:exported="false" />
         <activity
-            android:name=".QuizQ7Activity"
+            android:name=".QuizQ10Activity"
             android:exported="false" />
         <activity
             android:name=".TradeMainActivity"

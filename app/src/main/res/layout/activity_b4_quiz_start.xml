@@ -96,7 +96,7 @@
                             android:layout_width="wrap_content"
                             android:singleLine="true"
                             style="@style/txtPoppinssemibold15"
-                            android:text="@string/lbl_get_100"/>
+                            android:text="@string/lbl_get_1000"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imgStar"
                         android:layout_height="@dimen/_22pxh"
@@ -247,7 +247,7 @@
                                     android:layout_width="match_parent"
                                     android:singleLine="true"
                                     style="@style/txtPoppinssemibold16_1"
-                                    android:text="@string/lbl_win_100_points"/>
+                                    android:text="@string/lbl_win_1000"/>
                                 <TextView android:ellipsize="end"
                                     android:id="@+id/txtAnswerall"
                                     android:layout_height="wrap_content"
@@ -288,7 +288,7 @@
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         style="@style/txtPoppinsregular16BlueGray"
-                        android:text="@string/msg_10_point_awarded"/>
+                        android:text="@string/msg_100_awarded"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearPoint2"
                     android:layout_height="wrap_content"
