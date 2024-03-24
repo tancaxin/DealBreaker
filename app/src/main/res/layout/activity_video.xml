@@ -330,22 +330,5 @@
             </LinearLayout>
         </ScrollView>
 
-        <FrameLayout android:gravity="center_horizontal"
-            android:id="@+id/frameBottombar"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            style="@style/groupStyleblue_gray_800_02">
-
-            <ImageView android:id="@+id/imageIconsOne"
-                android:layout_gravity="center"
-                android:layout_height="@dimen/_21pxh"
-                android:layout_marginBottom="@dimen/_17pxv"
-                android:layout_marginTop="@dimen/_18pxv"
-                android:layout_width="@dimen/_290pxh"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_icons_blue_200"
-                tools:ignore="ContentDescription" />
-
-        </FrameLayout>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
