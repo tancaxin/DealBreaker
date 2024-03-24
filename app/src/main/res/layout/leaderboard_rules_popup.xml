@@ -63,7 +63,7 @@
                     android:layout_marginTop="@dimen/_3pxv"
                     android:layout_width="match_parent"
                     style="@style/txtPoppinssemibold15"
-                    android:text="The leaderboard resers every Sunday, at 12:00 AM (EST)."/>
+                    android:text="The leaderboard resets every Sunday at 11:30 AM (GMT+8)."/>
             </LinearLayout>
             <LinearLayout android:gravity="center_vertical"
                 android:id="@+id/linearTime"
