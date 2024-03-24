@@ -17,7 +17,7 @@ Initial fund: $100,000/ account
 Tradable assets: Investors can trade stocks listed on Bursa Malaysia.
 
 Trading:
-Each new player will be given $10 000.
+Each new player will be given $100,000.
 Reward will be given to the top three investors weekly.
 Investors can buy to maximum 500 stock per order
 
@@ -38,8 +38,7 @@ Investors will earn or lose coins based on their profit and loss during the comp
 
 Leaderboard: 
 A real time leaderboard based on their trading performance, including gains, losses, and overall portfolio value will be shown.
-The top three investors are on the leaderboard every Sunday at 11:30 AM (GMT+8) will earn virtual achievements and rewards.
-Rewards may include virtual currency, badges, or exclusive features.
+The top ten investors are on the leaderboard every Sunday at 11:30 PM (GMT+8) will earn virtual achievements and rewards.
 
 Fair Play and Rules Compliance:
 Players must adhere to fair play principles and comply with game rules and guidelines.
