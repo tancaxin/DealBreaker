@@ -13,7 +13,7 @@ Robust Analysis Tools: Leverage powerful analysis tools to analyze market trends
 
 ## Rules and Regulation
 Duration: The competition will run for four weeks.
-Initial fund: $10 000/ account
+Initial fund: $100,000/ account
 Tradable assets: Investors can trade stocks listed on Bursa Malaysia.
 
 Trading:
